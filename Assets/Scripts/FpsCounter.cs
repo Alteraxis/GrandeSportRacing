@@ -1,6 +1,10 @@
 using UnityEngine;
 using TMPro; // разобраться с тмп
 
+    /// <summary>
+    /// CHATGPT
+    /// </summary>
+
 public class FPSCounter : MonoBehaviour
 {
     public float updateInterval = 0.5f; // Интервал обновления счетчика (в секундах)

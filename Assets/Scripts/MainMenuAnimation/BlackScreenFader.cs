@@ -2,6 +2,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
+    /// <summary>
+    /// CHATGPT
+    /// </summary>
+
 public class BlackScreenFader : MonoBehaviour
 {
     //[SerializeField] private GameObject BlackScreen;

@@ -1,6 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
+    /// <summary>
+    /// CHATGPT
+    /// </summary>
+
 public class CameraAnimator : MonoBehaviour
 {
     public Transform startPosition; // Позиция начала движения камеры

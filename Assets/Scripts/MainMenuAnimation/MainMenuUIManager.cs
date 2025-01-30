@@ -1,6 +1,10 @@
    using UnityEngine;
    using UnityEngine.SceneManagement;
 
+    /// <summary>
+    /// CHATGPT
+    /// </summary>
+
     public class UIManager : MonoBehaviour
     {
         [SerializeField] private string startSceneName = "CityTestTrack";

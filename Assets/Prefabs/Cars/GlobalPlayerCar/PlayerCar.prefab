@@ -2308,9 +2308,9 @@ MonoBehaviour:
   - {fileID: 630690147147797301}
   - {fileID: 7705497296624523564}
   - {fileID: 5695365227668024399}
-  brakeTorque: 1000
+  brakeTorque: 1200
   torque: 470
-  steeringMaxAngle: 15
+  steeringMaxAngle: 10.5
   slipThreshold: 0.1
   stabilizationForce: 30
   steeringSensitivity: 22.5
@@ -2377,6 +2377,9 @@ MonoBehaviour:
   firstPoint: {fileID: 0}
   secondPoint: {fileID: 0}
   thirdPoint: {fileID: 0}
+  firstPointTextObject: {fileID: 0}
+  secondPointTextObject: {fileID: 0}
+  thirdPointTextObject: {fileID: 0}
 --- !u!1 &1096272414822536191
 GameObject:
   m_ObjectHideFlags: 0

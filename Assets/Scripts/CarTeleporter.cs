@@ -1,10 +1,14 @@
 using UnityEngine;
+using TMPro;
 
 public class CarTeleporter : MonoBehaviour
 {
     [SerializeField] private Transform firstPoint;
     [SerializeField] private Transform secondPoint;
     [SerializeField] private Transform thirdPoint;
+    [SerializeField] private TextMeshProUGUI firstPointTextObject;
+    [SerializeField] private TextMeshProUGUI secondPointTextObject;
+    [SerializeField] private TextMeshProUGUI thirdPointTextObject;
     private Rigidbody _rb;
 
     void Start()
@@ -12,15 +16,37 @@ public class CarTeleporter : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         if (!firstPoint)
         {
-            Debug.LogWarning("CarTeleporter: Пивот для телепорта на первую позицию не назначен.");
+            Debug.LogWarning("CarTeleporter: Пивот для телепорта на первую точку не назначен");
         }
         if (!secondPoint)
         {
-            Debug.LogWarning("CarTeleporter: Пивот для телепорта на вторую позицию не назначен.");
+            Debug.LogWarning("CarTeleporter: Пивот для телепорта на вторую точку не назначен");
         }
         if (!thirdPoint)
         {
-            Debug.LogWarning("CarTeleporter: Пивот для телепорта на третью позицию не назначен.");
+            Debug.LogWarning("CarTeleporter: Пивот для телепорта на третью точку не назначен");
+        }
+
+        if (!firstPointTextObject)
+        {
+            Debug.LogWarning("CarTeleporter: Текстовый объект с названием Первой точки телепорта не назначен");
+        } else 
+        {
+            firstPointTextObject.text += firstPoint.name;
+        }
+        if (!secondPointTextObject)
+        {
+            Debug.LogWarning("CarTeleporter: Текстовый объект с названием Второй точки телепорта не назначен");
+        } else 
+        {
+            secondPointTextObject.text += secondPoint.name;
+        }
+        if (!thirdPointTextObject)
+        {
+            Debug.LogWarning("CarTeleporter: Текстовый объект с названием Третьей точки телепорта не назначен");
+        } else 
+        {
+            thirdPointTextObject.text += thirdPoint.name;
         }
     }
 

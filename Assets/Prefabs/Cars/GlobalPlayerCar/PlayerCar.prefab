@@ -2308,11 +2308,12 @@ MonoBehaviour:
   - {fileID: 630690147147797301}
   - {fileID: 7705497296624523564}
   - {fileID: 5695365227668024399}
-  brakeTorque: 400
+  brakeTorque: 1000
   torque: 470
-  steeringMaxAngle: 30
-  slipThreshold: 3
-  stabilizationForce: 5
+  steeringMaxAngle: 15
+  slipThreshold: 0.1
+  stabilizationForce: 30
+  steeringSensitivity: 22.5
 --- !u!54 &3820764983510980333
 Rigidbody:
   m_ObjectHideFlags: 0

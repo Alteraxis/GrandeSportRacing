@@ -28,7 +28,7 @@ public class BlackScreenFader : MonoBehaviour
         while (timer < fadeDuration)
         {
             timer += Time.deltaTime;
-            float alpha = Mathf.Lerp(1, 0, timer / fadeDuration);
+            float alpha = Mathf.Lerp(1, 0.2f, timer / fadeDuration);
             _blackScreen.color = new Color(_blackScreen.color.r, _blackScreen.color.g, _blackScreen.color.b, alpha);
             yield return null;
         }
